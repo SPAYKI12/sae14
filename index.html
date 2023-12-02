@@ -25,11 +25,11 @@
         </div>
     </header>
     <main>
-        <nav class="contents-table">
+        <nav id="contents-table">
             <ul class="contents-list">
                 <li class="contents-list__item"><a href="#briefpresentation">Présentation sommaire</a></li>
-                <li><a href="#diaporama">Diaporama 2</a></li>
-                <li><a href="#video">Vidéo 3</a></li>
+                <li><a href="#diaporama">Diaporama</a></li>
+                <li><a href="#video">Vidéo</a></li>
             </ul>
         </nav>
         <section id="briefpresentation">
@@ -38,6 +38,32 @@
                 Bienvenue sur mon site web, je m’appelle <strong> Hayssam Hassan</strong>, étudiant en <strong>1ère année de BUT réseaux et télécoms</strong> à l’IUT
                 d’Elbeuf.
             </p>
+            <section class="briefpresentation__skills">
+                <h3 class="subsection-title">Compétences clé</h3>
+                <ul class="skills__list">
+                    <li class="skills__list-item"><strong>Informatique</strong></li>
+                    <li class="skills__list-item"><strong>Réseautage Informatique</strong></li>
+                    <li class="skills__list-item"><strong>Gestion de données</strong></li>
+                </ul>
+            </section>
+            <section class="briefpresentation__education">
+                <h3 class="subsection-title">Formation</h3>
+
+                <ul class="education__list">
+                    <li class="education__list-item"><strong>Bac Général NSI/Math</strong></li>
+                    <li class="education__list-item"><strong>1ère année BUT Réseaux et Télécoms</strong></li>
+                </ul>
+            </section>
+            <section class="briefpresentation__experience">
+                <h3 class="subsection-title">Experience</h3>
+
+                <ul class="experience__list">
+                    <li class="experience__list-item">Stage d'une semaine à <strong>Linkt (Système d'Information)</strong></li>
+                    <li class="experience__list-item">Plusieurs <strong> projets de programmation </strong> au lycée</li>
+                </ul>
+            </section>
+            <p>En savoir plus: <a href="cv.html"></a></p>
+
 
         </section>
         <section id="diaporama">
@@ -50,7 +76,13 @@
             <button class="diaporama__arrow-right"></button>
         </section>
         <section id="video">
+            <h2 class="section-title">Vidéo</h2>
 
+            <p>Cliquez sur le lien ci-dessous pour visionner la vidéo :</p>
+            <p><a href="lien_vers_video.mp4">Regarder la vidéo</a></p>
+
+            <p>Si vous rencontrez des problèmes de lecture, vous pouvez utiliser l'outil de visionnage alternatif :</p>
+            <p><a href="lien_vers_outil_de_visionnage">Outil de visionnage</a></p>
         </section>
 
 
@@ -59,7 +91,32 @@
     </main>
     <aside>
         <article class="business-card">
+            <div class="card__avatar">
+                <img src="" alt="">
+            </div>
+            <div class="card__details">
+                <div class="name">Hayssam Hassan</div>
+                <div class="occupation">Poste en cybersécurité</div>
+
+                <div class="card__about">
+                    <div class="item">
+                        <span class="value">18</span>
+                        <span class="label">Age</span>
+                    </div>
+                    <div class="item">
+                        <span class="value">20-30k</span>
+                        <span class="label">Expected Salary Range</span>
+                    </div>
+                </div>
+                <div class="card__skills">
+                    <span class="value">Skills</span>
+                </div>
+            </div>
         </article>
+        <div class="goup-button">
+            <div class="goup-button__arrow"></div>
+
+        </div>
     </aside>
 </body>
 </html>
