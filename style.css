@@ -9,6 +9,7 @@ a {
 * {
     box-sizing: border-box;
     margin: 0;
+
 }
 img {
     display:block;
@@ -37,6 +38,7 @@ img {
 body {
     font-family: var(--ff-default);
     min-height:100vh;
+
 
 }
 
@@ -80,10 +82,13 @@ main {
 @media (max-width:600px) {
     .nav-list{
         flex-direction: column;
+
     }
     .menu-button {
+        padding: 6px;
         display:block;
         margin: 0 auto;
+        width:3rem;
     }
 
 
