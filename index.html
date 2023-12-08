@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link href="style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="main-nav" onclick="enableMenuAnimation()">
-            <div class="menu-button">
-                <div class="vertical-bar"></div>
-                <div class="vertical-bar"></div>
-                <div class="vertical-bar"></div>
-            </div>
-
-            <ul class="nav-list">
-                <li class="nav-list__item--selected"><a href="#">ACCUEIl</a></li>
-                <li class="nav-list__item"><a href="cv.html">CV DÉTAILLÉ </a></li>
-                <li class="nav-list__item"><a href="references.html">RÉFÉRENCES</a></li>
-            </ul>
-
-        </nav>
-        <div class="language-selector">
-            <button class="language-selector__french">
-
-            </button>
-            <button class="language-selector__english">
-
-            </button>
+<header>
+    <nav class="main-nav">
+        <div class="menu-button">
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
         </div>
-    </header>
-    <main>
-        <div class="wrapper">
+
+        <ul class="nav-list">
+            <li class="nav-list__item--selected"><a href="#">ACCUEIl</a></li>
+            <li class="nav-list__item"><a href="cv.html">CV DÉTAILLÉ </a></li>
+            <li class="nav-list__item"><a href="references.html">RÉFÉRENCES</a></li>
+        </ul>
+
+    </nav>
+    <div class="language-selector">
+        <div class="language-selector__flag--selected">
+            <img src="images/frenchflag.png" alt="Drapeau français" width="34.5" height="23">
+
+        </div>
+        <div class="language-selector__flag">
+            <img src="images/ukflag.png" alt="Drapeau anglais" width="34.5" height="23">
+
+        </div>
+    </div>
+</header>
+<main>
+    <div class="wrapper">
         <nav id="contents-table">
             <ul class="contents-list">
                 <li class="contents-list__item"><a href="#briefpresentation">Présentation sommaire</a></li>
@@ -46,30 +49,30 @@
                 Bienvenue sur mon site web, je m’appelle <strong> Hayssam Hassan</strong>, étudiant en <strong>1ère année de BUT réseaux et télécoms</strong> à l’IUT
                 d’Elbeuf.
             </p>
-            <section class="briefpresentation__skills">
+            <div class="briefpresentation__skills">
                 <h3 class="subsection-title">Compétences clé</h3>
                 <ul class="skills__list">
                     <li class="skills__list-item"><strong>Informatique</strong></li>
                     <li class="skills__list-item"><strong>Réseautage Informatique</strong></li>
                     <li class="skills__list-item"><strong>Gestion de données</strong></li>
                 </ul>
-            </section>
-            <section class="briefpresentation__education">
+            </div>
+            <div class="briefpresentation__education">
                 <h3 class="subsection-title">Formation</h3>
 
                 <ul class="education__list">
                     <li class="education__list-item"><strong>Bac Général NSI/Math</strong></li>
                     <li class="education__list-item"><strong>1ère année BUT Réseaux et Télécoms</strong></li>
                 </ul>
-            </section>
-            <section class="briefpresentation__experience">
+            </div>
+            <div class="briefpresentation__experience">
                 <h3 class="subsection-title">Experience</h3>
 
                 <ul class="experience__list">
                     <li class="experience__list-item">Stage d'une semaine à <strong>Linkt (Système d'Information)</strong></li>
                     <li class="experience__list-item">Plusieurs <strong> projets de programmation </strong> au lycée</li>
                 </ul>
-            </section>
+            </div>
             <p>En savoir plus: <a href="cv.html"></a></p>
 
 
@@ -92,40 +95,40 @@
             <p>Si vous rencontrez des problèmes de lecture, vous pouvez utiliser l'outil de visionnage alternatif :</p>
             <p><a href="lien_vers_outil_de_visionnage">Outil de visionnage</a></p>
         </section>
+    </div>
+
+
+
+
+</main>
+<aside>
+    <article class="business-card">
+        <div class="card__avatar">
+            <img src="" alt="">
         </div>
+        <div class="card__details">
+            <div class="name">Hayssam Hassan</div>
+            <div class="occupation">Poste en cybersécurité</div>
 
-
-
-
-    </main>
-    <aside>
-        <article class="business-card">
-            <div class="card__avatar">
-                <img src="" alt="">
-            </div>
-            <div class="card__details">
-                <div class="name">Hayssam Hassan</div>
-                <div class="occupation">Poste en cybersécurité</div>
-
-                <div class="card__about">
-                    <div class="item">
-                        <span class="value">18</span>
-                        <span class="label">Age</span>
-                    </div>
-                    <div class="item">
-                        <span class="value">20-30k</span>
-                        <span class="label">Expected Salary Range</span>
-                    </div>
+            <div class="card__about">
+                <div class="item">
+                    <span class="value">18</span>
+                    <span class="label">Age</span>
                 </div>
-                <div class="card__skills">
-                    <span class="value">Skills</span>
+                <div class="item">
+                    <span class="value">20-30k</span>
+                    <span class="label">Expected Salary Range</span>
                 </div>
             </div>
-        </article>
-        <div class="goup-button">
-            <div class="goup-button__arrow"></div>
-
+            <div class="card__skills">
+                <span class="value">Skills</span>
+            </div>
         </div>
-    </aside>
+    </article>
+    <div class="goup-button">
+        <div class="goup-button__arrow"></div>
+
+    </div>
+</aside>
 </body>
 </html>
