@@ -16,7 +16,8 @@ img {
     max-width:100%;
 }
 section {
-    min-height:100vh;
+    min-height:80vh;
+    min-width: 50vw;
 }
 
 
@@ -137,8 +138,13 @@ main {
 
 
 }
+.language-selector img {
+    width:34.5px;
+    height:23px;
+}
+
 .language-selector button {
-    padding:20px;
+    padding:2rem;
 
 }
 
