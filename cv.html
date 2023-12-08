@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-
+    <link href="style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
 </head>
 <body>
 <header>
     <nav class="main-nav">
+        <div class="menu-button">
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
+        </div>
+
         <ul class="nav-list">
-            <li class="nav-list__item--selected"><a href="#">ACCUEIl</a></li>
+            <li class="nav-list__item--selected"><a href="index.html">ACCUEIl</a></li>
             <li class="nav-list__item"><a href="cv.html">CV DÉTAILLÉ </a></li>
             <li class="nav-list__item"><a href="references.html">RÉFÉRENCES</a></li>
         </ul>
 
     </nav>
     <div class="language-selector">
-        <button class="language-selector__french">
+        <div class="language-selector__flag--selected">
+            <img src="images/frenchflag.png" alt="Drapeau français" width="223" height="23">
 
-        </button>
-        <button class="language-selector__english">
+        </div>
+        <div class="language-selector__flag">
+            <img src="images/ukflag.png" alt="Drapeau anglais" width="34.5" height="23">
 
-        </button>
+        </div>
     </div>
 </header>
 <main>
+    <div class="wrapper">
     <section class="left-row">
         <div class="personnal-info">
             <h3 class="personnal-info__heading">Hayssam Hayssan</h3>
@@ -160,6 +171,7 @@
         <p class="references">Références disponibles sur demande </p>
 
     </section>
+    </div>
 
 
 
