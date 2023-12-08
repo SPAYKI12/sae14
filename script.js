@@ -1,12 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.getElementById('menuButton');
-    const menu = document.getElementById('nav-list');
 
-    menuButton.addEventListener('click', function () {
-        if (menu.style.display === 'none' || menu.style.display === '') {
-            menu.style.display = 'block';
-        } else {
-            menu.style.display = 'none';
-        }
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerButton = document.querySelector('.menu-button');
+    const navList = document.querySelector('.nav-list');
+
+    burgerButton.addEventListener('click', function() {
+        navList.classList.toggle('active');
+        burgerButton.classList.toggle('active');
     });
 });
