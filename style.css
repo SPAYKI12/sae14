@@ -36,6 +36,9 @@ section {
     --fs-main-nav: 2.75rem;
     --fs-default: 1rem;
     --fs-list: 1.25rem;
+    /* CARD */
+    --clr-card-primary: #ff1ead;
+    --card-size: 200px;
 
 }
 /* GENERAL */
@@ -139,7 +142,7 @@ main {
 
 }
 .language-selector img {
-    width:34.5px;
+    width:35px;
     height:23px;
 }
 
@@ -152,11 +155,103 @@ main {
     border: 2px yellow dotted;
 }
 
+/* BUSINESS CARD */
+
+
+.business-card {
+    position: fixed;
+    bottom:2rem;
+    right:2rem;
+
+    width: calc(var(--card-size) * 1.586);
+    height: var(--card-size);
+    border-radius: 0.75rem;
+    box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    background: black;
+    display: flex;
+    place-content: center;
+    color: white;
+    align-items: center;
+    will-change: transform;
+    transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+    &:hover {
+        transform: scale(1.1);
+        box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+}
+@media(max-width: 1000px) {
+    .business-card {
+        height:calc(var(--card-size)/1.55);
+        bottom:0;
+        left: calc(50% - (var(--card-size) * 0.793));
+    }
+}
+
+.business-card .card-details {
+    padding: 1rem;
+}
+
+.business-card .name {
+    font-size: 1.25rem;
+}
+
+.business-card .occupation {
+    font-weight: 600;
+    color: var(--clr-card-primary);
+}
+
+.business-card .card__avatar {
+    display: grid;
+    place-items: center;
+}
+
+.business-card .card__about {
+    margin-top: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.business-card .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+
+    .value {
+        font-size: 1rem;
+    }
+
+    .label {
+        margin-top: 0.15rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--clr-card-primary);
+    }
+}
+
+.business-card .card__skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+
+    .label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--clr-card-primary);
+    }
+
+    .value {
+        margin-top: 0.15rem;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+    }
+}
 
 /* CONTENT-ROW */
+
 .wrapper {
     background-color: var(--clr-content-row);
 }
+
 
 
 
