@@ -514,3 +514,10 @@ main {
 video {
     width:100%;
 }
+
+/* Options CV */
+@media(max-width: 1000px) {
+    .main-cv {
+        flex-direction: column;
+    }
+}
