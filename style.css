@@ -245,3 +245,18 @@ main {
 .briefpresentation__education { grid-area: 2 / 2 / 3 / 3; }
 .briefpresentation__experience { grid-area: 3 / 1 / 4 / 2; }
 
+/* Diaporama */
+#diaporama {
+    text-align: center;
+}
+
+.diaporama__content {
+    display: flex;
+    place-content: center;
+}
+.diaporama__arrow-left,.diaporama__arrow-right {
+    padding:50px;
+    margin:30px;
+    font-size:calc(var(--fs-default)*5)
+
+}
