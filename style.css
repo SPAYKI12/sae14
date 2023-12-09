@@ -510,3 +510,7 @@ main {
     color: var(--clr-default-opposite);
     background-color: var(--clr-default);
 }
+/* Video */
+video {
+    width:100%;
+}
