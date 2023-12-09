@@ -38,6 +38,7 @@ section {
     --fs-section-heading: 2.5rem;
     --fs-main-nav: 2.75rem;
     --fs-default: 1rem;
+    --fs-mobile: 0.5rem;
     --fs-list: 1.25rem;
     /* CARD */
     --clr-card-primary: #ff1ead;
@@ -213,14 +214,21 @@ main a {
 
 }
 main {
-    font-size:1.75rem;
-
+    font-size:calc(var(--fs-default)*1.75);
 }
+@media(max-width: 1000px) {
+    main {
+        font-size:calc(var(--fs-mobile)*1.75);
+    }
+}
+
 /* INDEX CONTENTS TABLE */
 .contents-list li {
     list-style-type: circle;
 }
 
+
+/*  BRIEF PRESENTATION */
 #briefpresentation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
